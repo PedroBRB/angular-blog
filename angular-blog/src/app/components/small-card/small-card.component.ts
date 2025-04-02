@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-small-card',
@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './small-card.component.css'
 })
 export class SmallCardComponent {
+
+  @Input()
+  photoCover: string = "https://image.api.playstation.com/vulcan/img/rnd/202010/2716/LQm890FA1pIAEoiU7HJQm1S5.png"
+  @Input()
+  cardTitle: string = "NOVA SERIE ANUNCIADA"
 
 }

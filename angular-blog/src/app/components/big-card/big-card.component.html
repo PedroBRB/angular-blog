@@ -1,7 +1,7 @@
 <div class="container__big-card">
   <div class="big-card__photo">
     <img
-      src="https://image.api.playstation.com/vulcan/img/rnd/202010/2716/LQm890FA1pIAEoiU7HJQm1S5.png"
+      src="{{ photoCover }}"
       alt="Big Card Image"
       height="200px"
       srcset=""
@@ -9,16 +9,13 @@
   </div>
 
   <div class="big-card__title">
-    <h1><a href="#">Saiu a nova versão do angular</a></h1>
+    <h1><a href="#"> {{ cardTitle }}</a></h1>
   </div>
 
   <div class="big-card__description">
     <p>
       <a href="#">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta omnis sit
-      illo eligendi, impedit facilis accusantium alias a deleniti in, hic
-      doloremque vero optio id recusandae dolorum expedita blanditiis.
-      Consequatur?
+      {{ cardDescription }}
     </a>
     </p>
   </div>
